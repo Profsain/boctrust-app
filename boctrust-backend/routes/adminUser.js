@@ -160,21 +160,36 @@ router.put('/update/:id', async (req, res) => {
     console.log("req.body", req.body)
     try {
         const { id } = req.params;
-        const { fullName, email, phone, username, password, jobRole, userType } = req.body;
+        const { fullName, email, phone, username, jobRole, userType } = req.body;
 
-        if (!(email && fullName && phone && username && password && jobRole && userType)) {
+        if (!(email && fullName && phone && username && jobRole && userType)) {
             return res.status(400).json({ error: 'All input is required' });
         }
-        const encryptedPassword = await bcrypt.hash(password, 10);
+
+        // find user by id
+        const userAccount = await User.findById(id);
+        const password = userAccount.password;
+        
+        // update user details
         const updated = await User.findByIdAndUpdate(id, {
             fullName,
             email: email.toLowerCase(),
             phone,
             username,
-            password: encryptedPassword,
+            password: password,
             jobRole,
             userType,
         });
+        // const updated = await User.findByIdAndUpdate(id, {
+        //     fullName,
+        //     email: email.toLowerCase(),
+        //     phone,
+        //     username,
+        //     password: encryptedPassword,
+        //     jobRole,
+        //     userType,
+        // });
+
         if (updated) {
             return res.status(200).json({ success: 'User updated successfully' });
         }
