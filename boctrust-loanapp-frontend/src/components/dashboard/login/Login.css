@@ -1,0 +1,49 @@
+.LogContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 3rem;
+    margin: 0 2rem;
+}
+
+.LoginBtn {
+    margin: 1rem 0;
+    width: 100%;
+    height: 3rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #145098;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.Input {
+    margin-bottom: 2rem;
+}
+
+.Forget {
+    margin-bottom: 5rem;
+    font-size: 0.8rem;
+    color: #145098;
+    cursor: pointer;
+}
+
+.asBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -2.5rem;
+}
+
+.asText {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: #145098;
+}
+
+.radio {
+    margin-right: 0.8rem;
+}

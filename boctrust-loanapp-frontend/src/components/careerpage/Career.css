@@ -1,0 +1,69 @@
+.TopContainer {
+  width: 100%;
+  background-color: #fff !important;
+  margin-top: -10% !important;
+  padding: 18px;
+  border-radius: 16px;
+}
+
+.TabContainer {
+    margin: 38px 0;
+}
+
+li {
+  margin-bottom: 6px;
+}
+.Orientation ul > li {
+  list-style: disc;
+}
+
+
+.Wrap {
+  display: flex;
+
+  flex-wrap: right;
+  margin: 28px;
+}
+
+.Text {
+  margin: 0 16px;
+}
+
+.VacancyList {
+  display: flex;
+  justify-content: center;
+}
+
+.JobDate {
+  padding: 8px 12px;
+  height: 20px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.ImgCard {
+  width: 60%;
+  height: 200px;
+  border-radius: 16px;
+}
+
+/* model box */
+.BtnApply {
+  background-color: #ecaa00;
+  border: none;
+}
+
+.BtnApply:hover {
+  background-color: #ce9300;
+  border: none;
+}
+
+.BtnClose {
+  background-color: gray;
+  border: none;
+}
+
+.BtnClose:hover {
+  background-color: #a3a3a3;
+  border: none;
+}

@@ -1,0 +1,81 @@
+.MainBox {
+    margin: 1rem 4rem 4rem 0;
+
+}
+
+.AddBtn {
+    text-align: right;
+    width: 100%;
+}
+
+.AddBtn span {
+    font-size: 1.5rem;
+}
+
+.SearchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    background-color: #d9d9d9;
+
+}
+
+.FormGroup input {
+    width: 70%;
+    height: 40px;
+    border: none;
+}
+
+input:active {
+    border: none !important;
+}
+
+.FormGroup label {
+    margin-right: 8px;
+    color: #145098;
+}
+
+.FormGroup img {
+    position: relative;
+    right: 2.5rem;
+}
+
+#action {
+    background-color: #ecaa00;
+    color: #fff;
+    font-size: 16px;
+    padding: 0.5rem;
+    margin-top: -0.1rem;
+    border: none;
+    width: 100px;
+}
+
+.CustomerImg {
+    width: 40px;
+    height: 40px;
+}
+
+.SubItem {
+    position: relative;
+    top: -0.5rem;
+    background-color: #103e75;
+    padding: 4px;
+    
+}
+
+.SubItem ul > li:hover {
+    padding-left: 18px;
+    border-left: 1px solid #fff;
+}
+
+.BtnRow {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+#MethodLogo {
+    width: 90%;
+}

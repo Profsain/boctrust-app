@@ -1,0 +1,36 @@
+.Inline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding-right: 2rem;
+}
+
+#Title {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 900 !important;
+}
+
+.Profile img {
+    margin-right: 1rem;
+}
+
+.UserCard {
+    display: flex;
+    padding: 8px;
+    background-color: #145098;
+    color: #fff;
+    border-radius: 6px;
+}
+
+.UserCard p {
+    margin: 0;
+}
+
+.UserCard img {
+    width: 30px;
+    height: 30px;
+    margin-left: 1rem;
+    margin-right: 0;
+}

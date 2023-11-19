@@ -1,0 +1,86 @@
+.TopNavContainer {
+    position: fixed;
+    top:0;
+    width:100%;
+    z-index: 100;
+}
+
+
+.Topnav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 70px;
+    color: #000;
+    background-color: #fff;
+    padding: 0 2rem;
+    padding-bottom: 22px;
+}
+
+.BottomStyle{
+    position: absolute;
+    bottom: 0;
+    top: 50px;
+    background-color: #145088 !important;
+    height: 50px;
+    width: 100%;
+}
+
+.Topnav h1 {
+    font-size: 0.8rem;
+    font-weight: 400;
+}
+
+.Topnav button {
+    background-color: #ECAA00;
+    color: #fff;
+    border: none;
+    border-radius: 0.25rem;
+    padding: 4px 12px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.Topnav button:hover {
+    background-color: #d69a03;
+    color: #fff;
+}
+
+
+.Nav {
+    background-color: #145088 !important;
+    box-shadow: 0 0 20px #ffffff33;
+}
+
+.Sticky {
+    background-color: #094379 !important;
+}
+
+.DropBox {
+    padding: 0 2rem 0 2.5rem;
+    margin-bottom: 2px;
+    background-color: #145088 !important;
+    color: #000 !important;
+}
+
+.DropItem {
+    color: #fff !important;
+    background-color: #145088;
+    padding: 0.5rem 1rem;
+    margin: -0.5rem 0;
+}
+
+.DropItem:hover {
+    background-color: #094379;
+}
+
+.DropSpace {
+    height: 10px;
+    background-color: #fff;
+}
+

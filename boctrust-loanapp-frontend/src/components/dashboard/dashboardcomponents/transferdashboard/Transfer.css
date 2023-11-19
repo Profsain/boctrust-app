@@ -1,0 +1,94 @@
+.TransContainer {
+    background-color: #e7e7e7;
+    padding: 0.2rem 1rem 3rem 1rem;
+    margin-top: 2rem;
+    margin-right: 3rem;
+    border-radius: 18px;
+}
+.FieldGroup {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 1rem;
+}
+
+.Notification {
+    font-size: 1rem;
+    text-align: center;
+    color: #145098;
+    margin-top: 2rem;
+    
+    
+}
+
+.FieldRow {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.SingleRow {
+    margin-left: 1.4rem;
+}
+
+.Select, .Input {
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    box-shadow: none;
+    color: #495057;
+    display: block;
+    font-size: 1.3rem;
+    height: calc(1.5em + 0.75rem + 2px);
+    line-height: 2.5;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    width: 460px;
+}
+
+.BtnContainer {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.CreditSearch {
+    height: 2.5rem;
+    width: 90%;
+    padding: 18px;
+}
+
+.SearchIcon {
+    position: relative;
+    right: 2rem;
+    bottom: 0.2rem;
+}
+
+.MandateLabel {
+    margin: -3rem 1rem 0 1rem;
+}
+
+.Gap {
+    margin-right: 1rem;
+}
+
+.Content {
+    height: 300px;
+}
+
+.Error {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: -1.7rem;
+}
+
+.ResultContainer {
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.ResultContainer p > span {
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-left: 2rem;
+    color: #145098;
+}
