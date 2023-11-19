@@ -38,6 +38,9 @@ const Support = () => {
   // handle form submit
   const handleFormSubmit = async (e) => {
     e.preventDefault();
+
+    const apiUrl = import.meta.env.VITE_BASE_URL;
+
     const { email, subject, message } = formData;
     const inquiry = {
       email,
@@ -45,7 +48,7 @@ const Support = () => {
       message,
     };
 
-    await fetch("http://localhost:3030/api/inquiry/inquiries", {
+    await fetch(`${apiUrl}/api/inquiry/inquiries`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

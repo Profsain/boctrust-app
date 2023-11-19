@@ -3,6 +3,8 @@ const router = express.Router();
 const multer = require('multer');
 const Disbursement = require('../models/DisbursementMethod');
 
+const baseUrl = process.env.BASE_URL;
+
 // Set up Multer storage to define where to save the uploaded images
 const storage = multer.diskStorage({
   destination: function (req, file, cb) {
@@ -27,7 +29,7 @@ router.get('/disbursements', async (req, res) => {
         const disbursementsWithImages = disbursements.map(disbursement => {
             return {
                 ...disbursement.toJSON(),
-                imageUrl: `http://localhost:3030/uploads/${disbursement.logoImg}`
+                imageUrl: `${baseUrl}/uploads/${disbursement.logoImg}`
             };
         });
 

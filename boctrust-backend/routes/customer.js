@@ -69,6 +69,8 @@ router.post('/customer', multipleUpload, async (req, res) => {
 });
 
 // Read all customer
+const baseUrl = process.env.BASE_URL;
+
 router.get('/customers', async (req, res) => {
   try {
     const customer = await CustomerModel.find();
@@ -82,11 +84,11 @@ router.get('/customers', async (req, res) => {
     const customerWithImages = customer.map((customer) => {
       return {
         ...customer.toJSON(),
-        valididcard: `http://localhost:3030/public/filesUpload/${customer.valididcard}`,
-        uploadpayslip: `http://localhost:3030/public/filesUpload/${customer.uploadpayslip}`,
-        signature: `http://localhost:3030/public/filesUpload/${customer.signature}`,
-        employmentletter: `http://localhost:3030/public/filesUpload/${customer.employmentletter}`,
-        photocaptureImg: `http://localhost:3030/public/filesUpload/${customer.photocapture}`,
+        valididcard: `${baseUrl}/public/filesUpload/${customer.valididcard}`,
+        uploadpayslip: `${baseUrl}/public/filesUpload/${customer.uploadpayslip}`,
+        signature: `${baseUrl}/public/filesUpload/${customer.signature}`,
+        employmentletter: `${baseUrl}/public/filesUpload/${customer.employmentletter}`,
+        photocaptureImg: `${baseUrl}/public/filesUpload/${customer.photocapture}`,
       };
     });
 

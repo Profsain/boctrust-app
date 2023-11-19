@@ -63,6 +63,8 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    const apiUrl = import.meta.env.VITE_BASE_URL;
+
     const { fullName, phoneNumber, email, subject, message } = formData;
     const contact = {
       fullName,
@@ -72,7 +74,7 @@ const Contact = () => {
       message,
     };
 
-    await fetch("http://localhost:3030/api/contact/contacts", {
+    await fetch(`${apiUrl}/api/contact/contacts`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

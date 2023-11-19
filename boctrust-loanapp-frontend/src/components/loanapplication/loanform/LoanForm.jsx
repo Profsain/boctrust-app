@@ -240,7 +240,8 @@ const LoanForm = ({ data }) => {
       formData.append("confirmpassword", formValues.confirmpassword);
 
       // send formData to database
-      await fetch("http://localhost:3030/api/customer/customer", {
+      const apiUrl = import.meta.env.VITE_BASE_URL;
+      await fetch(`${apiUrl}/api/customer/customer`, {
         method: "POST",
         enctype: "multipart/form-data",
         body: formData,

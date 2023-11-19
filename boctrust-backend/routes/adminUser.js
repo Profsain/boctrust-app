@@ -27,9 +27,10 @@ router.get('/users', async (req, res) => {
 
         // Map users to include image URLs
         const usersWithImages = users.map(user => {
+            const baseUrl = process.env.BASE_URL || 'http://localhost:3030';
             return {
                 ...user.toJSON(),
-                imageUrl: `http://localhost:3030/uploads/${user.photo}`
+                imageUrl: `${baseUrl}/uploads/${user.photo}`
             };
         });
 

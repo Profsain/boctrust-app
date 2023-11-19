@@ -1,7 +1,9 @@
 const sendEmail = async (options) => {
+  const apiUrl = import.meta.env.VITE_BASE_URL;
+  
     const { email, subject, html, firstname, lastname } = options;
 
-     await fetch("http://localhost:3030/api/email/send-email", {
+     await fetch(`${apiUrl}/api/email/send-email`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
