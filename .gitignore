@@ -1,2 +1,4 @@
 boctrust-app/boctrust-backend/.env
+boctrust-backend/.env
+boctrust-loanapp-frontend/.env
 boctrust-loanapp-frontend/.env
